@@ -3,243 +3,349 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Gulshan Perween - Full Stack Developer portfolio. MERN stack, React Native, and modern web development.">
+    <title>Gulshan Perween | Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
+    <!-- =================== HEADER =================== -->
     <div id="header">
         <div id="container">
             <nav>
-                <img src="images/download (23).jpg" class="logo">
-                <ul>
+                <a href="#header" class="logo-link">
+                    <img src="images/download (23).jpg" class="logo" alt="Gulshan Perween logo">
+                </a>
+                <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul id="nav-menu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                
                 </ul>
             </nav>
-            <div class="header-text">
-                <p>Frontend Developer</p>
-                <h1>Hi! I am <span>Gulshan Perween</span><br> a Frontend Developer</h1>
-              
-            </div>
 
-            <div id="header-img">
-                <img src="images/WhatsApp Image 2024-07-04 at 1.50.37 PM.jpg">
-            </div>
-            
-               
-        </div>
-    </div>
-<!-- -------about----------- -->
-    <div id ="about">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/IMG_9470.JPG">
-            </div>
-            <div class="about-col-2">
-                <h1 class="subtitle">About Me</h1>
-                <p>Hi, I'm a dedicated frontend developer with a deep passion for creating immersive and interactive web experiences. I am pursuing B.Voc Web Designing from Kalindi College, University of Delhi.
-
-                    I began my journey in web development with a fascination for how digital interfaces could transform user interactions. Over the years, I’ve developed a strong foundation in HTML, CSS, and JavaScript, and I’ve also good knowledge of Wordpress, Reacts Js.</p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('Education')">Education</p>
-                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <div class="header-wrapper">
+                <div class="header-text">
+                    <p class="tagline">Full Stack Developer</p>
+                    <h1>Hi! I am <span>Gulshan Perween</span><br>a Full Stack Developer</h1>
+                    <p class="subheading">I build scalable MERN-stack web apps, React Native mobile experiences, and intuitive user interfaces.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn">View My Work</a>
+                        <a href="images/CV_Gulshan_Perween.pdf" download class="btn btn-outline">
+                            <i class="fa-solid fa-download"></i> Download CV
+                        </a>
+                    </div>
                 </div>
 
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Frontend Development</span> 
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            
-                        <li><span>Frameworks & Libraries</span>
-                            <li>Reactjs</li>
-                            <li>Django</li>
-                            <li>Angular Js</li>
-                            
-                       <li><span>Tools & Software</span>
-                            <li>Ms Excel</li>
-                            <li>WordPress</li>
-                            <li>Git & Github</li>
-
-                    </ul>
-                </div>
-                <div class="tab-contents" id="Education">
-                    <ul>
-                        <li><span>Tenth (Schooling)</span>
-                            <li>Institute: MS Badopur, Aurangabad Bihar</li>
-                            <li>Year: 2019</li>
-                            <li>GPA/Marks(%): 87.2%</li>
-                            
-                            
-                        <li><span>Twelveth</span>
-                            <li>Institute: Dr VKS College, Aurangabad Bihar</li>
-                            <li>Year: 2021</li>
-                            <li>GPA/Marks(%): 77.4%</li>
-                            
-                            
-                        </li>
-                        <li><span>Degree/Course: B.voc Web Designing</span>
-                            <li>Institute: Kalindi College, University Of Delhi</li>
-                            <li>Year: 2022-2025</li>
-                            <li>GPA/Marks(%): 7.5</li>
-                            
-                        </li>
-
-                       
-
-                    </ul>
-                </div>
-                <div class="tab-contents" id="Experience">
-                    <ul>
-<!--                         <li><span></span> <br>Designing web app interfaces</li>
-                        <li><span></span> <br>Designing web app interfaces</li>
-                        <li><span></span></span> <br>Designing web app interfaces</li> -->
-
-                       
-
-                    </ul>
+                <div id="header-img">
+                    <img src="images/WhatsApp Image 2024-07-04 at 1.50.37 PM.jpg" alt="Gulshan Perween">
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- =================== ABOUT =================== -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_9470.JPG" alt="About Gulshan">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hi, I'm Gulshan — a full-stack developer passionate about building modern, scalable, and user-friendly web and mobile applications. I recently graduated with a Bachelor of Vocational Studies in Web Designing from Kalindi College, University of Delhi (Grade 8.5).</p>
+                    <p>I work across the MERN stack (MongoDB, Express.js, React.js, Node.js) and have hands-on experience building production apps with React Native, REST APIs, JWT auth, and payment integrations. I love turning complex ideas into clean, responsive interfaces that people enjoy using.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <!-- SKILLS -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span>
+                                <p>JavaScript, Python</p>
+                            </li>
+                            <li><span>Frontend</span>
+                                <p>React.js, HTML5, CSS3, Tailwind CSS, Bootstrap, shadcn/ui</p>
+                            </li>
+                            <li><span>Backend</span>
+                                <p>Node.js, Express.js, REST APIs, JWT Authentication</p>
+                            </li>
+                            <li><span>Mobile</span>
+                                <p>React Native (Expo)</p>
+                            </li>
+                            <li><span>Databases</span>
+                                <p>MongoDB, MySQL</p>
+                            </li>
+                            <li><span>Tools &amp; Platforms</span>
+                                <p>Git, GitHub, Postman, Docker, WordPress, Redux</p>
+                            </li>
+                            <li><span>Cloud &amp; Deployment</span>
+                                <p>Vercel, Render, Hostinger</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- EXPERIENCE -->
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Websitoz — Developer</span>
+                                <p class="date-tag">Oct 2025 – Mar 2026</p>
+                                <p>Built a React Native (Expo) travel app with booking, exploration, and hotel/flight search. Developed an admin dashboard and multi-vendor system for managing travel packages at scale. Implemented state management and dynamic data handling for real-time updates and smooth UI performance.</p>
+                            </li>
+                            <li><span>Startup Pedia — Web Developer</span>
+                                <p class="date-tag">Sep 2024 – Dec 2024</p>
+                                <p>Developed a responsive landing page using WordPress and Elementor, improving user engagement. Integrated Fluent Forms with a secure payment gateway for seamless registration and transactions. Automated email notifications to streamline post-registration workflows.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- EDUCATION -->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>B.Voc — Web Designing</span>
+                                <p>Kalindi College, University of Delhi</p>
+                                <p class="date-tag">2022 – 2025 · Grade: 8.5</p>
+                            </li>
+                            <li><span>Class XII</span>
+                                <p>Dr VKS College, Aurangabad, Bihar</p>
+                                <p class="date-tag">2021 · 77.4%</p>
+                            </li>
+                            <li><span>Class X</span>
+                                <p>MS Badopur, Aurangabad, Bihar</p>
+                                <p class="date-tag">2019 · 87.2%</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================== PROJECTS =================== -->
     <div id="projects">
         <div class="container">
-            <h1 class="subtitle"><marquee>My Projects</marquee></h1>
+            <h1 class="subtitle">My Projects</h1>
+            <p class="section-lead">A selection of work — full-stack apps, mobile projects, and front-end experiments.</p>
             <div class="projects-list">
-                <div>
-                    <img src="images/6832207.jpg">
-                    <h2>An Ecommerce Website</h2>
-                    <p>Developed an E-Commerce Website  of a clothing brand using HTML and CSS.</p>
-                    <a href="https://gulshan-perween.github.io/E-Commerce-website/">Learn more</a>
-                </div>
-                <div>
-                    <img src="images/3062524.jpg">
-                    <h2>Animated Website</h2>
-                    <p>Developed an interactive website with engaging scrolling animations and canvas-based graphics using HTML, CSS, and JavaScript. The site features smooth transitions and parallax effects that respond to user interactions, providing a visually immersive experience.
-                        used- HTML, CSS JavaScript
-                    </p>
-                    <a href="https://gulshan-perween.github.io/3D-website/">Learn more</a>
-                </div>
-                <div>
-                    <img src="images/5702614.jpg">
-                    <h2>Math Quiz Website</h2>
-                    <p>Developed an interactive math quiz website using HTML, CSS, and JavaScript, incorporating various question types
-                        for user engagement and learning, which calculates and shows scores at the end. You can find the code here and the
-                        site here.
-                        – used: HTML, CSS, JS</p>
-                    <a href="https://gulshan-perween.github.io/maths_quiz/">Learn more</a>
-                </div>
-                <div>
-                    <img src="images/Origami_04-01.jpg">
-                    <h2>TextConverter</h2>
-                    <p>Developed a TextConverter using Reactjs , add different functionality  such as converting the text into uppercase , lowercase, clears the text. It also shows the time taken to read the text and also  count the number of letters and words  in the given text.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <img src="images/2002.i305.026_realistic weather forecast mobile application app.jpg">
-                    <h2>Dynamic web application utilizing AngularJS</h2>
-                    <p>Fetching and displaying real-time data from external APIs. Implemented features such as country selection, Flag, population statistics, and currency information, showcasing proficiency in front-end development and API integration. Demonstrated ability to create responsive and interactive user interfaces for data-driven applications.
-                        – used: Angular JS, APIs, HTML, JS,CS.</p>
-                    <a href="https://github.com/Gulshan-Perween/country_info">Learn more</a>
-                </div>
-                <div>
-                    <img src="images/CV-Template-01.jpg">
-                    <h2>Portfolio Website</h2>
-                    <p>Developed a portfolio website using WordPress. This website is a personal showcase of my skills, projects, and accomplishments as a frontend developer. Used the Astra theme for its clean, responsive design and customization flexibility and Elementor plugin.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <img src="images/beautiful-girl-standing-viewpoint-koh-nangyuan-island-near-koh-tao-island-surat-thani-thailand.jpg">
-                    <h2>Travel Landing Page</h2>
-                    <p>Developed a  demo landing page of travel & tourist Company usind wordpress. Used astra theme and elementor plugin.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <img src="images/top-view-black-calculator-female-hands-black-table-free-space.jpg">
-                    <h2>A simple Calculator</h2>
-                    <p>Designed and built a calculator to do addition, subtraction, multiplication, and division, which takes input from on-screen keyboard and shows result on screen after a click on ”=” and clears input on click on ”C”.
 
-                        – used: HTML, CSS, JS</p>
-                    <a href="https://gulshan-perween.github.io/Calculator/">Learn more</a>
-                    
+                <div class="project-card">
+                    <img src="images/5702614.jpg" alt="Job Hunt project">
+                    <div class="project-body">
+                        <span class="project-tag">Full Stack · MERN</span>
+                        <h2>Job Hunt</h2>
+                        <p>A job portal with JWT authentication and role-based access for students and recruiters. RESTful APIs using Express.js &amp; MongoDB for job posting, applicant tracking, and status management. Deployed on Vercel &amp; Render with Redux and a responsive Tailwind + shadcn/ui interface.</p>
+                        <div class="tech-stack">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span><span>JWT</span><span>Tailwind</span>
+                        </div>
+                        <a href="https://github.com/Gulshan-Perween" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/WhatsApp Image 2024-08-05 at 2.32.44 PM.jpeg">
-                    <h2>KSIX International</h2>
-                    <p>Developed a another landing page of a hair company using WordPress on the localhost. Here I used a Theme and customize it according to the Client need using Elementor Plugin.</p>
-                    <a href="#">Learn more</a>
+
+                <div class="project-card">
+                    <img src="images/CV-Template-01.jpg" alt="EstateHub project">
+                    <div class="project-body">
+                        <span class="project-tag">Full Stack · MERN</span>
+                        <h2>EstateHub — Real Estate Platform</h2>
+                        <p>Full-stack MERN real estate platform for browsing, searching, and managing property listings. Role-based admin dashboard for CRUD, listing approvals, user management, and inquiries. JWT auth, image uploads, and a Chart.js analytics dashboard.</p>
+                        <div class="tech-stack">
+                            <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span><span>Chart.js</span>
+                        </div>
+                        <a href="https://github.com/Gulshan-Perween" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
+
+                <div class="project-card">
+                    <img src="images/2002.i305.026_realistic weather forecast mobile application app.jpg" alt="Travel mobile app">
+                    <div class="project-body">
+                        <span class="project-tag">Mobile · React Native</span>
+                        <h2>Travel Booking App</h2>
+                        <p>A React Native (Expo) travel app built at Websitoz featuring booking, exploration, hotel &amp; flight search. Multi-vendor admin dashboard for managing travel packages at scale with real-time state management.</p>
+                        <div class="tech-stack">
+                            <span>React Native</span><span>Expo</span><span>Redux</span><span>REST APIs</span>
+                        </div>
+                        <a href="#" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/Origami_04-01.jpg" alt="TOMATO food ordering">
+                    <div class="project-body">
+                        <span class="project-tag">Frontend · React</span>
+                        <h2>TOMATO — Food Ordering</h2>
+                        <p>Food-ordering website built with React.js — dynamic menu, cart, and order management. Clean, responsive UI/UX with smooth browsing, add-to-cart, and checkout flow.</p>
+                        <div class="tech-stack">
+                            <span>React</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/Gulshan-Perween" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/3062524.jpg" alt="Animated Website">
+                    <div class="project-body">
+                        <span class="project-tag">Frontend · Animation</span>
+                        <h2>Animated Website</h2>
+                        <p>Interactive website with scroll animations and canvas-based graphics. Smooth transitions, parallax effects, and responsive design — an immersive, animation-rich user experience.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canvas</span>
+                        </div>
+                        <a href="https://gulshan-perween.github.io/3D-website/" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/6832207.jpg" alt="E-Commerce Website">
+                    <div class="project-body">
+                        <span class="project-tag">Frontend</span>
+                        <h2>E-Commerce Website</h2>
+                        <p>Static e-commerce layout for a clothing brand with clean UI, structured product sections, and fully responsive design across devices and screen sizes.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span><span>CSS</span>
+                        </div>
+                        <a href="https://gulshan-perween.github.io/E-Commerce-website/" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/beautiful-girl-standing-viewpoint-koh-nangyuan-island-near-koh-tao-island-surat-thani-thailand.jpg" alt="Travel Landing Page">
+                    <div class="project-body">
+                        <span class="project-tag">WordPress</span>
+                        <h2>Startup Pedia Landing</h2>
+                        <p>Responsive landing page built with WordPress &amp; Elementor. Fluent Forms integrated with a secure payment gateway for user registration and transactions, plus automated email workflows.</p>
+                        <div class="tech-stack">
+                            <span>WordPress</span><span>Elementor</span><span>Fluent Forms</span>
+                        </div>
+                        <a href="#" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/top-view-black-calculator-female-hands-black-table-free-space.jpg" alt="Calculator">
+                    <div class="project-body">
+                        <span class="project-tag">Frontend</span>
+                        <h2>Calculator</h2>
+                        <p>A simple calculator for addition, subtraction, multiplication, and division with on-screen keyboard, result display, and clear functionality.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <a href="https://gulshan-perween.github.io/Calculator/" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/WhatsApp Image 2024-08-05 at 2.32.44 PM.jpeg" alt="KSIX International">
+                    <div class="project-body">
+                        <span class="project-tag">WordPress</span>
+                        <h2>KSIX International</h2>
+                        <p>Landing page for a hair-care brand, customized on WordPress using Elementor with brand-aligned styling and layout per client requirements.</p>
+                        <div class="tech-stack">
+                            <span>WordPress</span><span>Elementor</span>
+                        </div>
+                        <a href="#" target="_blank" rel="noopener">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>  
-    <!-- -----------------contact---------------  -->
+    </div>
 
+    <!-- =================== CONTACT =================== -->
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="subtitle">Contact Me</h1>
-                    <br>
-                    <br>
-                    <p><i class="fa-solid fa-envelope"></i>perweengulshan56@gmail.com</p>
-                    <br>
-                    <p><i class="fa-solid fa-phone"></i>6207957470</p>
+                    <p class="section-lead">Open to full-time, freelance, and collaboration opportunities. Let's build something great.</p>
+                    <p><i class="fa-solid fa-envelope"></i> perweengulshan56@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 6207957470</p>
                     <div class="social-icons">
-                        <a href="https://www.instagram.com/gulshan_n00r/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-square-facebook"></i></i></a>
-                        <a href="https://www.linkedin.com/in/gulshan-perween-84aa53261/
-                        
-                        "><i class="fa-brands fa-linkedin-in"></i></i></a>
-                        
+                        <a href="https://github.com/Gulshan-Perween" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gulshan-perween-84aa53261/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/gulshan_n00r/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:perweengulshan56@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
                     </div>
-                    <a href="images/Resume_Gulshan (4).pdf" download class="btn">Download Resume</a>
+                    <a href="images/CV_Gulshan_Perween.pdf" download class="btn"><i class="fa-solid fa-download"></i> Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form onsubmit="handleSubmit(event)">
                         <input type="text" name="name" placeholder="Your Name" required>
-                        <br>
-                        <br>
-                        <input type="email" name="email" placeholder="Your Email" required><br>
-                        <br>
-                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                        <br>
-                        <button type="submit" class="btn">Submit</button><br>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
         </div>
 
         <div class="copyright">
-            <p>Copyright @ Gulshan. </p>
+            <p>© 2026 Gulshan Perween. Built with care.</p>
         </div>
     </div>
-    <script>
 
+    <script>
+        // Tabs
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
-            for(tablink of tablinks){
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-
-            for(tabcontent of tabcontents){
+            for (var tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
-
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
-
         }
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("show");
+        }
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll("#nav-menu a").forEach(link => {
+            link.addEventListener("click", () => {
+                document.getElementById("nav-menu").classList.remove("show");
+            });
+        });
+
+        // Simple form handler (mailto fallback)
+        function handleSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            const name = form.name.value;
+            const email = form.email.value;
+            const subject = form.subject.value || "Portfolio contact";
+            const message = form.message.value;
+            const body = encodeURIComponent(`From: ${name} <${email}>\n\n${message}`);
+            window.location.href = `mailto:perweengulshan56@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+        }
+
+        // Scroll-triggered fade in
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll(".project-card, .about-col-1, .about-col-2, .contact-left, .contact-right").forEach(el => {
+            el.classList.add("fade-in");
+            observer.observe(el);
+        });
     </script>
 </body>
 </html>
